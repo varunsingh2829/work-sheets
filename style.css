@@ -1,0 +1,204 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+.title-bar{
+    background-color: rgb(177 177 177);
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    color: #010110;
+
+}
+.menu-bar{
+    display: flex;
+    background-color: rgb(233, 239, 241);
+    height: 5rem;
+
+
+}
+select{
+    border: none;
+    border-right: 1px solid;
+    padding-right: 0.5rem;
+    outline: none;
+    /* margin: 1.5rem; */
+}
+.save-file, .font-stying, .text-style, .text-align, .text-color{
+    display: flex;
+    width: 15%;
+    height: 80%;
+    align-items: center;
+    justify-content: space-evenly;
+    border-right: 0.1px solid black;
+    
+}
+.font-stying{
+    width: 30%;
+}
+.fa, .fas{
+    font-size: x-large;
+    color: rgb(121, 117, 117);
+}
+.iconSelected{
+    color: rgb(27, 27, 27);
+}
+
+.formula-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: lightpink; */
+    height: 2rem;
+    border: 1px solid gray;
+    border-left: none;
+    border-right: none ;
+
+}
+.formula-bar>*{
+    height: 70%;
+    outline: none;
+}
+.formula-bar>p{
+    margin: 1rem;
+
+}
+img{
+    height: 80%;
+}
+.address-input{
+    width: 4rem;
+    text-align: center;
+    border: none;
+    border-right: 1px solid gray;
+}
+.formula-input{
+    width: calc(100vw - 8rem);
+    border: none;
+    border-left: 1px solid gray;
+   
+}
+.sheet-container{
+    background-color: #f1f2f6;
+    height: 2.5rem;
+
+}
+.grid-bar{
+    overflow: auto;
+    /* background-color: rgb(225, 232, 236); */
+    height: calc(100vh - ( 1.5rem + 2rem + 5rem + 2.5rem));
+
+}
+.top-row{
+    display: flex;
+    text-align: center;
+    position: relative;
+    top: -1.5rem;
+    left: 2.1rem;
+}
+.left-col{
+    text-align: center;
+    width: 2rem;
+    position: relative;
+    top: -1.4rem;
+    border : 0.5px solid rgb(202, 196, 196);
+    background-color: #f1f2f6;
+    font-size: small;
+    
+}
+.top-row .cell{
+
+    min-width: 6rem;
+    border : 0.5px solid rgb(202, 196, 196);
+    background-color: #f1f2f6;
+    font-size: small;
+    
+}
+.cell{
+    
+    height: 1.5rem;
+    border : 0.001px solid rgb(202, 196, 196);
+    
+   
+    outline: none;
+    overflow: hidden;
+    justify-content: center;
+    
+     /* max-width: 5rem;   */
+    
+}
+.top-left-box{
+    /* background-color: rgb(184, 182, 179); */
+    height: 1.5rem;
+    width: 2rem;
+    border : 5px solid rgb(175, 173, 173);
+    border-left: 0px;
+    border-top: 0px;
+    
+}
+.grid .cell{
+    min-width: 6rem;
+    border-left: 0px;
+    border-top: 0px;
+    
+    
+}
+.first-row{
+    display: flex;
+}
+.grid-bar{
+    position: relative;
+}
+.grid{
+    position: absolute;
+    top: 1.6rem;
+    left: 2.1rem;
+    text-align: center;
+    
+}
+
+/*sheet */
+
+.sheet-container{
+    background-color: #f1f2f6;
+    height: 2.5rem;
+    display: flex;
+}
+
+.add-sheet{
+    height: 100%;
+    min-width: 30px;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    border-radius: 10%;
+}
+.plusicon{
+    /* width: 100%; */
+    font-size: 1.7rem;
+    color: gray;
+}
+.sheets-list{
+    display: flex;
+    height: 100%;
+    overflow-x: auto;
+}
+.sheet{
+    min-width: 60px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+}
+.active-sheet{
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 10%;
+}

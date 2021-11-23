@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="title-bar" >Work-Sheets</div>
+    <div class="menu-bar">
+        <div class="save-file">
+            <div class="new-icon">
+                <i class="fa fa-file" aria-hidden="true"></i>
+            </div>
+            <div class="open-icon">
+                <i class="fa fa-folder-open" aria-hidden="true"></i>
+            </div>
+            <div class="save-icon">
+                <i class="fa fa-bookmark" aria-hidden="true"></i>
+            </div>
+            <input type="file" class="open-input" style="display: none;">
+        </div>
+        <div class="font-stying">
+            <select class="font-family">
+                <option class="font-1">Arial</option>
+                <option class="font-1">Verdana</option>
+                <option class="font-1">Franklin Gothic Medium</option>
+                <option class="font-1">Times New Roman</option>
+                <option class="font-1">Book Antiqua</option>
+                <option class="font-1">Bookman</option>
+                <option class="font-1">New Century Schoolbook</option>
+                <option class="font-1">Rockwell</option>
+                <option class="font-1">Baskerville</option>
+                <option class="font-1">Courier New</option>
+                <option class="font-1">Comic Sans MS</option>
+                <option class="font-1">Gabriola</option>
+            </select>
+            <select class="font-size">
+                <option class="fs14">14</option>
+                <option class="fs16">16</option>
+                <option class="fs18">18</option>
+                <option class="fs20">20</option>
+                <option class="fs22">22</option>
+                <option class="fs24">24</option>
+                <option class="fs14">26</option>
+                <option class="fs16">28</option>
+                <option class="fs18">30</option>
+                <option class="fs20">32</option>
+                <option class="fs22">34</option>
+                <option class="fs24">36</option>
+                <option class="fs24">38</option>
+                <option class="fs24">40</option>
+
+            </select>
+        </div>
+        <div class="text-align">
+            <div class="left-align">
+                <i class="fa fa-align-left left" aria-hidden="true"></i>
+            </div>
+            <div class="center-align">
+                <i class="fa fa-align-center center" aria-hidden="true"></i>
+            </div>
+            <div class="right-align">
+                <i class="fa fa-align-right right" aria-hidden="true"></i>
+            </div>
+            <div class="justify-align">
+                <i class="fa fa-align-justify justify"></i>
+            </div>
+        </div>
+        <div class="text-style">
+            <div class="bold-icon">
+                <i class="fa fa-bold" aria-hidden="true"></i>
+            </div>
+            <div class="italic-icon">
+                <i class="fa fa-italic" aria-hidden="true"></i>
+            </div>
+            <div class="underline-icon">
+                <i class="fa fa-underline" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="text-color">
+            <div class="color-icon">
+                <i class="fas fa-palette"></i>
+            </div>
+            <div class="bg-icon">
+                <i class="fas fa-fill-drip"></i>
+            </div>
+            <div class="color-input">
+                <input type="color" class="colorinput" style="display: none;">
+            </div>
+            <div class="bg-color">
+                <input type="color" class="bginput" style="display: none;">
+            </div>
+        </div>
+
+    </div>
+    <div class="formula-bar">
+        <input type="text" class="address-input" disabled/>
+        <p>
+            <img src="image/fx.png">
+        </p>
+        <input type="text" placeholder="Formula" class="formula-input"/>
+    </div>
+    <div class="grid-bar">
+        <div class="top-left-box"></div>
+        <div class="top-row" ></div>
+        <div class="left-col" ></div>
+        <div class="grid"></div>
+    </div>
+    <div class="sheet-container">
+        <div class="add-sheet">
+            <i class="fas fa-plus plusicon"></i>
+        </div>
+        <div class="sheets-list">
+            <div class="sheet active-sheet" sheetid="0">Sheet 1</div>
+        </div>
+    </div>
+    <script src="init.js"></script>
+    <script src="menu.js"></script>
+    <script src="save.js"></script>
+    <script src="formula.js"></script>
+    <script src="sheet.js"></script>
+    
+</body>
+</html>
